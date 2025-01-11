@@ -5,6 +5,7 @@ import { Center, GluestackUIProvider,Text} from '@gluestack-ui/themed';
 import { config,gluestackUIConfig } from './config/gluestack-ui.config';
 import { Loadgin } from '@components/Loading';
 import { Signin } from '@components/screens/Signin';
+import { SignUp } from '@components/screens/SigUp';
 
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
        
       <StatusBar backgroundColor='transparent' translucent barStyle="light-content" />
 
-      {fontsLoaded ?  <Signin/> : <Loadgin backGorundColor={'$gray700'} colorSpineer='$green500'/>}
+      {fontsLoaded ?  <SignUp/> : <Loadgin backGorundColor={'$gray700'} colorSpineer='$green500'/>}
       
      
 
